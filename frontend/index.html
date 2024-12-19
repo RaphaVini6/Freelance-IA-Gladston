@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ferramenta de transcrição de áudio para texto">
+    <title>IA Voice to Text</title>
+    <link rel="stylesheet" href="/IAGladston/frontend/style.css">
+</head>
+<body>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Transforme Áudio em Texto</h1>
+                <p>Com nossa IA avançada, transcrever áudios nunca foi tão fácil!</p>
+            </div>
+        </section>
+        <section class="upload-container">
+            <div class="form-box">
+                <h2>Envie seu Áudio</h2>
+                <form id="upload-form">
+                    <label for="audio-file" class="form-label">Escolha um arquivo de áudio:</label>
+                    <input type="file" id="audio-file" name="audio" accept="audio/*" required>
+                    <button type="submit">Enviar</button>
+                </form>
+                <div id="result" class="result">
+                    <div class="c-loader"></div>
+                    <span>Aguardando...</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="/IAGladston/frontend/script.js"></script>
+</body>
+</html>
